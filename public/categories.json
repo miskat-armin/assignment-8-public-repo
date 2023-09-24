@@ -1,0 +1,135 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/n1B0m4m/Health.png",
+      "category": "Health",
+      "title": "Clean Water for Children",
+      "description": "Help provide nutritious meals to those in need, promoting better health and well-being in our community. Your donation will support local food banks, soup kitchens, and nutrition programs, ensuring that families and individuals have access to fresh and wholesome food options.",
+      "donation_price": 290,
+      "category_name_background_color": "#0052FF33",
+      "card_background_color": "#0052FF26",
+      "text_color": "#0052FF"
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/NsCNbwB/Education.png",
+      "category": "Education",
+      "title": "Good Education",
+      "description": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork. Teachers can create a positive and supportive learning environment for their students and challenge them to reach their full potential.",
+      "donation_price": 290,
+      "category_name_background_color": "#FF444A33",
+      "card_background_color": "#FF444A26",
+      "text_color": "#FF444A"
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/cbSCzG1/Clothing.png",
+      "category": "Clothing",
+      "title": "Used Clothing Drive",
+      "description": "Donate warm clothing to keep those in need cozy during the cold winter months, spreading warmth and love. Your support will provide jackets, blankets, and winter accessories to homeless individuals and families, ensuring they stay safe and comfortable during the winter season.",
+      "donation_price": 290,
+      "category_name_background_color": "#79C23F33",
+      "card_background_color": "#79C23F26",
+      "text_color": "#79C23F"
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/6P5R0F0/Food.png",
+      "category": "Food",
+      "title": "Better Food for Everyone",
+      "description": "Provide essential medical supplies to clinics and hospitals, ensuring access to healthcare for all. Your donation will help procure medical equipment, medications, and hygiene supplies for healthcare facilities serving vulnerable populations.",
+      "donation_price": 290,
+      "category_name_background_color": "#F8714733",
+      "card_background_color": "#F8714726",
+      "text_color": "#F87147"
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/6P5R0F0/Food.png",
+      "category": "Food",
+      "title": "Better Food for Everyone",
+      "description": "Provide essential medical supplies to clinics and hospitals, ensuring access to healthcare for all. Your donation will help procure medical equipment, medications, and hygiene supplies for healthcare facilities serving vulnerable populations.",
+      "donation_price": 290,
+      "category_name_background_color": "#F8714733",
+      "card_background_color": "#F8714726",
+      "text_color": "#F87147"
+    },
+    {
+      "id": 6,
+        "image": "https://i.ibb.co/cbSCzG1/Clothing.png",
+        "category": "Clothing",
+        "title": "Used Clothing Drive",
+        "description": "Help individuals stay cool during the hot summer months by providing lightweight clothing for them. Your support will supply summer attire, such as T-shirts, shorts, and sun hats, to people in need, ensuring they stay comfortable in the heat.",
+        "donation_price": 290,
+        "category_name_background_color": "#79C23F33",
+        "card_background_color": "#79C23F26",
+        "text_color": "#79C23F"
+      },
+    {
+      "id": 7,
+      "image": "https://i.ibb.co/NsCNbwB/Education.png",
+      "category": "Education",
+      "title": "Good Education",
+      "description": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork. Teachers can create a positive and supportive learning environment for their students and challenge them to reach their full potential.",
+      "donation_price": 290,
+      "category_name_background_color": "#FF444A33",
+      "card_background_color": "#FF444A26",
+      "text_color": "#FF444A"
+    },   
+    {
+      "id": 8,
+      "image": "https://i.ibb.co/n1B0m4m/Health.png",
+      "category": "Health",
+      "title": "Clean Water for Children",
+      "description": "Support clean water initiatives to ensure access to safe drinking water for communities in need. Your donation will help build water purification systems, repair infrastructure, and provide education on water sanitation, improving the health of countless individuals.",
+      "donation_price": 290,
+      "category_name_background_color": "#0052FF33",
+      "card_background_color": "#0052FF26",
+      "text_color": "#0052FF"
+    },
+    {
+      "id": 9,
+      "image": "https://i.ibb.co/n1B0m4m/Health.png",
+      "category": "Health",
+      "title": "Clean Water for Children",
+      "description": "Support clean water initiatives to ensure access to safe drinking water for communities in need. Your donation will help build water purification systems, repair infrastructure, and provide education on water sanitation, improving the health of countless individuals.",
+      "donation_price": 290,
+      "category_name_background_color": "#0052FF33",
+      "card_background_color": "#0052FF26",
+      "text_color": "#0052FF"
+    },
+    {
+      "id": 10,
+      "image": "https://i.ibb.co/NsCNbwB/Education.png",
+      "category": "Education",
+      "title": "Good Education",
+      "description": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork. Teachers can create a positive and supportive learning environment for their students and challenge them to reach their full potential.",
+      "donation_price": 290,
+      "category_name_background_color": "#FF444A33",
+      "card_background_color": "#FF444A26",
+      "text_color": "#FF444A"
+    },
+    {
+      "id": 11,
+      "image": "https://i.ibb.co/cbSCzG1/Clothing.png",
+      "category": "Clothing",
+      "title": "Used Clothing Drive",
+      "description": "Donate warm winter coats to children in need, ensuring they stay warm and healthy throughout the winter season. Your generosity will provide children with the protection they need to thrive, even in cold weather.",
+      "donation_price": 290,
+      "category_name_background_color": "#79C23F33",
+      "card_background_color": "#79C23F26",
+      "text_color": "#79C23F"
+    },
+    {
+      "id": 12,
+        "image": "https://i.ibb.co/6P5R0F0/Food.png",
+        "category": "Food",
+        "title": "Better Food for Everyone",
+        "description": "Provide essential medical supplies to clinics and hospitals, ensuring access to healthcare for all. Your donation will help procure medical equipment, medications, and hygiene supplies for healthcare facilities serving vulnerable populations.",
+        "donation_price": 290,
+        "category_name_background_color": "#F8714733",
+        "card_background_color": "#F8714726",
+        "text_color": "#F87147"
+      }
+  ]
+  
