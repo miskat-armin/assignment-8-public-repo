@@ -8,7 +8,10 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <Categories categories={categories}></Categories>
+            <div className="max-w-[85%] mx-auto">
+                <Categories categories={categories}></Categories>
+            </div>
+            
         </div>
     );
 };

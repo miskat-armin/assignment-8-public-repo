@@ -23,6 +23,7 @@ const myCreatedRoute = createBrowserRouter([
             element: <Statistics></Statistics>
         }
       ]
+      
     },
   ]);
 
