@@ -17,15 +17,15 @@ const Banner = ({FilterData}) => {
         src={Background}
       />
 
-      <div className="mt-[50px] flex flex-col justify-center items-center">
-        <h1 className="mt-20 mb-7">I Grow By Helping People In Need</h1>
+      <div className="pt-[20px] md:pt-[80px] xl:pt-[120px] flex flex-col justify-center items-center">
+        <h1 className="mb-7 text-sm md:text-4xl xl:text-5xl">I Grow By Helping People In Need</h1>
 
         <div className="flex flex-row">
           <input
             onChange={e => setQuery(e.target.value)}
             type="text"
             placeholder="Search here...."
-            className="input input-bordered input-md w-[350px] max-w-xs rounded-none rounded-l-lg mr-0"
+            className="input input-bordered input-md w-[150px] md:w-[350px] max-w-xs rounded-none rounded-l-lg mr-0"
           />
           <button
             onClick={handleSearchClick}

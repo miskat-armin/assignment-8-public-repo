@@ -28,7 +28,7 @@ const Donation = () => {
     }
 
     return (
-        <div>
+        <div className="flex justify-center items-center">
             {noDonationFound ?
                 <p className="h-[80vh] flex justify-center items-center">No Donation Found</p>
                 :

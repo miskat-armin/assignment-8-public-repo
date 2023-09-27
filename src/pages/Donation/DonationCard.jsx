@@ -7,58 +7,34 @@ const DonationCard = ({ category }) => {
 
     return (
         <div>
-            {/* <div className="relative flex w-full max-w-[48rem]  flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-                <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
+            <div className="relative mb-4 flex flex-col md:flex-row w-[250px] md:w-[320px] lg:w-[350px] xl:w-[500px] md:h-[180px] xl:h-[150px] rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+
+                <div className="relative md:w-2/5 w-full md:h-full overflow-hidden rounded-t-xl md:rounded-r-none md:rounded-l-xl  bg-white bg-clip-border text-gray-700">
                     <img
                         src={image}
                         alt="image"
-                        className="h-[150px] w-[180px] object-cover"
-                    />
-                </div>
-                <div style={{backgroundColor: card_background_color}} className="p-6">
-                    <h6 style={{backgroundColor: category_name_background_color, color: text_color }} className="block w-fit h-fit p-2 rounded-md text-sm font-medium leading-relaxed antialiased">
-                        {category_name}
-                    </h6>
-                    <h4 className="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                        {title}
-                    </h4>
-                    <p style={{color: text_color}} className="mb-8 block text-base font-semibold leading-relaxed text-gray-700 antialiased">
-                        ${donation_price}.00
-                    </p>
-
-                    <Link to={`/category/${category_name}`}>
-                    
-                    <button style={{backgroundColor: text_color, color: 'white'}} className="rounded-sm px-2">
-                        View Details</button>
-                    </Link>
-                </div>
-            </div> */}
-            <div className="relative mb-4 flex flex-col md:flex-row w-full max-w-[48rem] rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-
-                <div className="relative md:w-2/5 w-full overflow-hidden rounded-xl md:rounded-l-none bg-white bg-clip-border text-gray-700">
-                    <img
-                        src={image}
-                        alt="image"
-                        className="w-full h-auto md:h-[150px] object-cover"
+                        className="w-full h-full object-cover"
                     />
                 </div>
 
-                <div style={{ backgroundColor: card_background_color }} className="p-4 md:p-6 flex-1">
+                <div style={{ backgroundColor: card_background_color }} className="p-4 flex-1 rounded-b-xl md:rounded-l-none md:rounded-r-xl">
                     <h6
                         style={{ backgroundColor: category_name_background_color, color: text_color }}
-                        className="block w-fit h-fit p-2 rounded-md text-sm font-medium leading-relaxed antialiased"
+                        className="block w-fit h-fit p-1 rounded-md text-xs font-medium leading-relaxed antialiased"
                     >
                         {category_name}
                     </h6>
-                    <h4 className="mb-2 block text-lg font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                        {title}
-                    </h4>
-                    <p style={{ color: text_color }} className="mb-4 md:mb-8 block text-base font-semibold leading-relaxed text-gray-700 antialiased">
+                    <div className="md:max-lg:h-[3rem]">
+                        <h4 className="mb-2 block text-md font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                            {title}
+                        </h4>
+                    </div>
+                    <p style={{ color: text_color }} className="mb-3 block text-base font-semibold leading-relaxed text-gray-700 antialiased">
                         ${donation_price}.00
                     </p>
 
                     <Link to={`/category/${category_name}`}>
-                        <button style={{ backgroundColor: text_color, color: 'white' }} className="rounded-sm px-2 py-1">
+                        <button style={{ backgroundColor: text_color, color: 'white' }} className="rounded-sm px-2 md: py-1">
                             View Details
                         </button>
                     </Link>
