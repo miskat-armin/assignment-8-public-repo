@@ -27,7 +27,7 @@ const myCreatedRoute = createBrowserRouter([
         loader: () => fetch('/categories.json')
       },
       {
-        path: "/category/:category_name",
+        path: "/category/:title",
         element: <Category></Category>,
         loader: () => fetch('/categories.json')
       }

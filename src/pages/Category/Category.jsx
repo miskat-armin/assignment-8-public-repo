@@ -5,18 +5,16 @@ import CategoryCard from "./CategoryCard";
 const Category = () => {
     const [category, setCategory] = useState({})
 
-    const {category_name} = useParams();
+    const {title} = useParams();
 
     const categories = useLoaderData();
 
     useEffect(() => {
-        const findCategory = categories?.find(category => category.category_name === category_name)
+        const findCategory = categories?.find(category => category.title === title)
         
         setCategory(findCategory);
 
-    }, [category_name, categories])
-
-    console.log(category);
+    }, [title, categories])
 
     return (
         <div>

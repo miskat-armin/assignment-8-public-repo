@@ -8,7 +8,7 @@ const CategoriesCard = ({ category }) => {
     return (
 
         <div style={{ backgroundColor: card_background_color }} className="relative flex w-64 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-            <Link to={`/category/${category_name}`} state={{name: title}}>
+            <Link to={`/category/${title}`} state={{name: title}}>
                 <div className="relative h-44 overflow-hidden rounded-t-xl bg-white bg-clip-border text-gray-700">
                     <img
                         src={image}

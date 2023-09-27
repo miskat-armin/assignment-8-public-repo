@@ -33,7 +33,7 @@ const DonationCard = ({ category }) => {
                         ${donation_price}.00
                     </p>
 
-                    <Link to={`/category/${category_name}`}>
+                    <Link to={`/category/${title}`}>
                         <button style={{ backgroundColor: text_color, color: 'white' }} className="rounded-sm px-2 md: py-1">
                             View Details
                         </button>
