@@ -5,7 +5,8 @@ import PropTypes from 'prop-types';
 
 const Banner = ({FilterData}) => {
   const [query, setQuery] = useState()
-  const handleSearchClick = () => {
+  const handleSearchClick = (e) => {
+    e.preventDefault();
     FilterData(query.trim());
   }
 
@@ -20,7 +21,7 @@ const Banner = ({FilterData}) => {
       <div className="pt-[20px] md:pt-[80px] xl:pt-[120px] flex flex-col justify-center items-center">
         <h1 className="mb-7 text-sm md:text-4xl xl:text-5xl">I Grow By Helping People In Need</h1>
 
-        <div className="flex flex-row">
+        <form className="flex flex-row" onSubmit={handleSearchClick}>
           <input
             onChange={e => setQuery(e.target.value)}
             type="text"
@@ -28,12 +29,12 @@ const Banner = ({FilterData}) => {
             className="input input-bordered input-md w-[150px] md:w-[350px] max-w-xs rounded-none rounded-l-lg mr-0"
           />
           <button
-            onClick={handleSearchClick}
+            type="submit"
             className="text-sm px-4 rounded-none text-white rounded-r-lg bg-[#FF444A] border-orange-600"
           >
             Search
           </button>
-        </div>
+        </form>
       </div>
     </div>
   );
