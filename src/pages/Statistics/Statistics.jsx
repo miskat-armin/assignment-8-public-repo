@@ -15,12 +15,12 @@ const Statistics = () => {
             {
                 name: "Your Donation",
                 value: ((donated / categories.length) * 100.0),
-                color: '#FF444A'
+                color: '#00C49F'
             },
             {
                 name: "Total Donation",
                 value: (((categories.length - donated) / categories.length) * 100.0),
-                color: '#00C49F'
+                color: '#FF444A'
             },
         ]);
     }, []);
