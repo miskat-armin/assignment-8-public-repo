@@ -7,9 +7,9 @@ const DonationCard = ({ category }) => {
 
     return (
         <div>
-            <div className="relative mb-4 flex flex-col md:flex-row w-[250px] md:w-[320px] lg:w-[350px] xl:w-[500px] md:h-[180px] xl:h-[150px] rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+            <div className="relative mb-4 flex flex-col md:flex-row w-[250px] md:w-[320px] lg:w-[350px] xl:w-[500px] md:h-[180px] xl:h-[150px] rounded-lg bg-white bg-clip-border text-gray-700 shadow-md">
 
-                <div className="relative md:w-2/5 w-full md:h-full overflow-hidden rounded-t-xl md:rounded-r-none md:rounded-l-xl  bg-white bg-clip-border text-gray-700">
+                <div className="relative md:w-2/5 w-full md:h-full overflow-hidden rounded-t-lg md:rounded-r-none md:rounded-l-lg  bg-white bg-clip-border text-gray-700">
                     <img
                         src={image}
                         alt="image"
@@ -17,7 +17,7 @@ const DonationCard = ({ category }) => {
                     />
                 </div>
 
-                <div style={{ backgroundColor: card_background_color }} className="p-4 flex-1 rounded-b-xl md:rounded-l-none md:rounded-r-xl">
+                <div style={{ backgroundColor: card_background_color }} className="p-4 flex-1 rounded-b-lg md:rounded-l-none md:rounded-r-lg">
                     <h6
                         style={{ backgroundColor: category_name_background_color, color: text_color }}
                         className="block w-fit h-fit p-1 rounded-md text-xs font-medium leading-relaxed antialiased"

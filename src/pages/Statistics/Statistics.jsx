@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
-import { Legend, Line, Pie, PieChart, Tooltip } from "recharts";
+import { Cell, Legend, Pie, PieChart, ResponsiveContainer } from "recharts";
 
 const Statistics = () => {
     const categories = useLoaderData();
@@ -14,44 +14,55 @@ const Statistics = () => {
         setData([
             {
                 name: "Your Donation",
-                value: (donated / categories.length).toFixed(2) * 100,
+                value: ((donated / categories.length) * 100.0),
+                color: '#FF444A'
             },
             {
                 name: "Total Donation",
-                value: ((categories.length - donated) / categories.length).toFixed(2) * 100,
+                value: (((categories.length - donated) / categories.length) * 100.0),
+                color: '#00C49F'
             },
         ]);
     }, []);
 
+    console.log(data)
+
+    const RADIAN = Math.PI / 180;
+    const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }) => {
+        const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
+        const x = cx + radius * Math.cos(-midAngle * RADIAN);
+        const y = cy + radius * Math.sin(-midAngle * RADIAN);
+      
+        return (
+          <text style={{color: '#FFF', fontWeight:'bold'}} x={x} y={y} fill="white" textAnchor={x > cx ? 'start' : 'end'} dominantBaseline="central">
+            {`${(percent * 100).toFixed(1)}%`}
+          </text>
+        );
+      };
     return (
-        <div>
+        <div className="h-[400px] w-full flex justify-center items-center">
             {
                 data.length > 0 &&
-                <PieChart width={730} height={250}>
-                    <Pie
-                        data={data}
-                        dataKey="value"
-                        nameKey="name"
-                        cx="50%"
-                        cy="50%"
-                        outerRadius={50}
-                        fill="#8884d8"
-                    />
-                    <Tooltip />
-                    <Legend verticalAlign="top" height={36} />
-                    <Line
-                        name="pv of pages"
-                        type="monotone"
-                        dataKey="pv"
-                        stroke="#8884d8"
-                    />
-                    <Line
-                        name="uv of pages"
-                        type="monotone"
-                        dataKey="uv"
-                        stroke="#82ca9d"
-                    />
-                </PieChart>
+                <ResponsiveContainer width="100%" height="100%">
+                    <PieChart width='60%' height='60%'>
+                        <Pie
+                            data={data}
+                            dataKey="value"
+                            nameKey="name"
+                            cx="50%"
+                            cy="50%"
+                            labelLine={false}
+                            label={renderCustomizedLabel}
+                            outerRadius='90%'
+                            fill="#8884d8"
+                        >
+                            {data.map((entry, index) => (
+                                <Cell key={`cell-${index}`} fill={entry.color} />
+                            ))}
+                        </Pie>
+                        <Legend iconType="plainline" align="center"  iconSize={70}  marginTop='20px' verticalAlign="bottom" width={'100%'} />
+                    </PieChart>
+                </ResponsiveContainer>
             }
         </div>
     );
